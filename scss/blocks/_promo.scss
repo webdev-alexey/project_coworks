@@ -2,6 +2,12 @@
 }
 
 .promo__wrapper {
+  $gradinent: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+
   padding: 30px;
   height: 600px;
 
@@ -11,12 +17,7 @@
 
   border-radius: 40px;
   background-color: #000;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.7) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
-    url("./../img/promo/promo-bg.jpg");
+  background-image: $gradinent, url("./../img/promo/promo-bg.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,13 +25,28 @@
   color: #fff;
   text-align: center;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.7) 100%
-      ),
-      url("./../img/promo/promo-bg@2x.jpg");
+  @include mediaBG {
+    background-image: $gradinent, url("./../img/promo/promo-bg@2x.jpg");
+  }
+
+  @include tablet {
+    height: 434px;
+    background-image: $gradinent, url("./../img/promo/promo-bg-tablet.jpg");
+
+    @include mediaBG {
+      background-image: $gradinent, url("./../img/promo/promo-bg-tablet@2x.jpg");
+    }
+  }
+
+  @include mobile {
+    height: auto;
+    padding: 60px 15px;
+    background-image: $gradinent, url("./../img/promo/promo-bg-mobile.jpg");
+    border-radius: 20px;
+
+    @include mediaBG {
+      background-image: $gradinent, url("./../img/promo/promo-bg-mobile@2x.jpg");
+    }
   }
 }
 
@@ -40,12 +56,29 @@
   flex-direction: column;
   row-gap: 40px;
   align-items: center;
+
+  @include tablet {
+    row-gap: 30px;
+  }
+
+  @include mobile {
+    max-width: 330px;
+    row-gap: 20px;
+  }
 }
 
 .promo__title {
   font-size: 72px;
   font-weight: 800;
   line-height: 1;
+
+  @include tablet {
+    font-size: 52px;
+  }
+
+  @include mobile {
+    font-size: 32px;
+  }
 }
 
 .promo__text {
@@ -55,10 +88,16 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .promo__btns {
   display: flex;
-  column-gap: 20px;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }

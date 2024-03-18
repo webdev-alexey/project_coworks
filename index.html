@@ -16,7 +16,7 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container container--mobile-fluid">
         <div class="header__row">
           <a href="#!" class="header__logo logo">
             <img src="./img/logo/logo.svg" alt="CoWorks" />
@@ -36,11 +36,15 @@
               <li class="nav__item">
                 <a href="#!" class="nav__link">Расположение</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item visible-desktop">
                 <button class="btn-dark">Оставить заявку</button>
               </li>
             </ul>
           </nav>
+
+          <button class="header__nav-btn">
+            <img src="./img/icons/nav-btn-open.svg" alt="Open nav" />
+          </button>
         </div>
       </div>
     </header>
@@ -147,13 +151,24 @@
             </div>
             <div class="locations__controls">
               <button>
-                <img src="./img/icons/arrow-left.svg" alt="Prev" />
+                <img
+                  class="locations__controls-img"
+                  src="./img/icons/arrow-left.svg"
+                  alt="Prev"
+                />
               </button>
               <button>
-                <img src="./img/icons/arrow-right.svg" alt="Next" />
+                <img
+                  class="locations__controls-img"
+                  src="./img/icons/arrow-right.svg"
+                  alt="Next"
+                />
               </button>
             </div>
           </div>
+        </div>
+
+        <div class="container container--mobile-fluid">
           <div class="slider">
             <img
               src="./img/slider/slide-01.jpg"
@@ -173,6 +188,25 @@
               alt="Slide"
               class="slider__img"
             />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="locations__controls locations__controls--mobile">
+            <button>
+              <img
+                class="locations__controls-img"
+                src="./img/icons/arrow-left.svg"
+                alt="Prev"
+              />
+            </button>
+            <button>
+              <img
+                class="locations__controls-img"
+                src="./img/icons/arrow-right.svg"
+                alt="Next"
+              />
+            </button>
           </div>
         </div>
       </section>
@@ -462,11 +496,23 @@
 
                 <div class="topic__content">
                   <p>
-                    Чтобы <a href="#!">добраться</a> в наш коворкинг,
-                    используйте общественный транспорт, такой как метро или
-                    автобус. Наш офис расположен в непосредственной близости от
-                    станции метро, выходите на выходе, указанном в нашем адресе.
-                    Пешеходный подход к офису обеспечен для вашего удобства.
+                    Для заказа пропуска в наш коворкинг вы можете
+                    воспользоваться удобной онлайн формой на нашем сайте. Просто
+                    заполните необходимую информацию, включая ваше имя,
+                    контактные данные и предпочтительный срок пользования
+                    коворкингом. Наша команда оперативно обработает ваш запрос и
+                    свяжется с вами для уточнения деталей и подтверждения
+                    бронирования.
+                  </p>
+                  <p>
+                    Если у вас возникли вопросы или вам нужна дополнительная
+                    помощь при заказе пропуска, не стесняйтесь обращаться к
+                    нашему отделу клиентского обслуживания. Мы готовы ответить
+                    на все ваши запросы и предоставить подробную информацию о
+                    наших услугах. Вы также можете связаться с нами по телефону
+                    или отправить электронное письмо, и наш специалист с
+                    удовольствием поможет вам сделать заказ и подобрать
+                    оптимальное решение для ваших потребностей.
                   </p>
                 </div>
               </section>
@@ -474,7 +520,7 @@
               <section class="topic">
                 <h3 class="topic__header">
                   <button class="topic__btn" type="button">
-                    <span class="topic__title">Как заказать пропуск</span>
+                    <span class="topic__title">Как добраться</span>
                     <img
                       src="./img/icons/btn-minus.svg"
                       alt="Open / Close question"
@@ -490,20 +536,13 @@
                     станции метро, выходите на выходе, указанном в нашем адресе.
                     Пешеходный подход к офису обеспечен для вашего удобства.
                   </p>
-                  <p>
-                    Чтобы <a href="#!">добраться</a> в наш коворкинг,
-                    используйте общественный транспорт, такой как метро или
-                    автобус. Наш офис расположен в непосредственной близости от
-                    станции метро, выходите на выходе, указанном в нашем адресе.
-                    Пешеходный подход к офису обеспечен для вашего удобства.
-                  </p>
                 </div>
               </section>
 
               <section class="topic">
                 <h3 class="topic__header">
                   <button class="topic__btn" type="button">
-                    <span class="topic__title">Как заказать пропуск</span>
+                    <span class="topic__title">Где припарковаться</span>
                     <img
                       src="./img/icons/btn-plus.svg"
                       alt="Open / Close question"
@@ -513,18 +552,18 @@
                 </h3>
                 <div class="topic__content">
                   <p>
-                    Чтобы <a href="#!">добраться</a> в наш коворкинг,
-                    используйте общественный транспорт, такой как метро или
-                    автобус. Наш офис расположен в непосредственной близости от
-                    станции метро, выходите на выходе, указанном в нашем адресе.
-                    Пешеходный подход к офису обеспечен для вашего удобства.
+                    Наш коворкинг предоставляет широкий выбор вариантов парковки
+                    для удобства наших клиентов. Прямо возле здания нашего офиса
+                    расположены выделенные парковочные места, где вы можете
+                    оставить свой автомобиль в течение всего вашего визита. Эти
+                    места обеспечивают удобный доступ к нашему зданию, сокращая
+                    время и усилия, затрачиваемые на поиск парковочного места.
                   </p>
                   <p>
-                    Чтобы <a href="#!">добраться</a> в наш коворкинг,
-                    используйте общественный транспорт, такой как метро или
-                    автобус. Наш офис расположен в непосредственной близости от
-                    станции метро, выходите на выходе, указанном в нашем адресе.
-                    Пешеходный подход к офису обеспечен для вашего удобства.
+                    В нескольких минутах ходьбы от нашего коворкинга есть
+                    несколько общественных парковочных зон, где вы можете
+                    оставить свой автомобиль, если парковочные места прямо у
+                    нашего здания заняты.
                   </p>
                 </div>
               </section>
@@ -540,6 +579,7 @@
           <div class="footer__logo">
             <img src="./img/logo/logo-footer.svg" alt="Coworking CoWorks" />
           </div>
+
           <div class="footer__nav">
             <ul class="nav-footer">
               <li class="nav-footer__item">
@@ -556,6 +596,7 @@
               </li>
             </ul>
           </div>
+
           <div class="footer__socials">
             <ul class="social-list">
               <li class="social-list__item">
