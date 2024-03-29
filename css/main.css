@@ -1074,4 +1074,24 @@ a.nav-footer__link:hover {
   .social-list {
     column-gap: 20px;
   }
+}
+
+.top-link {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+}
+.top-link--visible {
+  opacity: 1;
+  pointer-events: all;
 }/*# sourceMappingURL=main.css.map */
