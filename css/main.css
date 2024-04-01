@@ -1072,12 +1072,10 @@ a.btn-whatsapp:hover {
 }
 
 .topic__content {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1em;
   line-height: 1.5;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in;
 }
 @media (max-width: 788px) {
   .topic__content {
@@ -1086,8 +1084,11 @@ a.btn-whatsapp:hover {
   }
 }
 
-.topic__content--open {
-  display: flex;
+.topic__content-padding {
+  padding-top: 30px;
+}
+.topic__content-padding p + p {
+  margin-top: 1em;
 }
 
 .footer {
@@ -1218,6 +1219,13 @@ a.nav-footer__link:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+}
+.modal--open {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal__body {
@@ -1227,12 +1235,18 @@ a.nav-footer__link:hover {
   background: #fff;
   border-radius: 20px;
   color: #2f2f2f;
+  transform: translate(0, -50%);
+  transition: all 0.2s ease-in;
 }
 @media (max-width: 788px) {
   .modal__body {
     padding: 20px;
     width: 360px;
   }
+}
+
+.modal--open .modal__body {
+  transform: translate(0, 0);
 }
 
 .modal__close {
