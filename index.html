@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>СoWorks - Коворкинг мечты</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
     <link
@@ -93,14 +94,14 @@
                 <button class="btn-green" data-action="modal">
                   Оставить заявку
                 </button>
-                <a href="#!" class="btn-outline">Исследовать</a>
+                <a href="#benefits" class="btn-outline">Исследовать</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <div class="benefits__row">
             <div class="benefits__img">
@@ -180,14 +181,14 @@
               <h2 class="title-section">Локации и рабочие пространства</h2>
             </div>
             <div class="locations__controls">
-              <button>
+              <button class="prev">
                 <img
                   class="locations__controls-img"
                   src="./img/icons/arrow-left.svg"
                   alt="Prev"
                 />
               </button>
-              <button>
+              <button class="next">
                 <img
                   class="locations__controls-img"
                   src="./img/icons/arrow-right.svg"
@@ -198,39 +199,113 @@
           </div>
         </div>
 
-        <div class="container container--mobile-fluid">
+        <div
+          class="container container--tablet-fluid container--mobile-no-padding"
+        >
           <div class="slider">
-            <img
-              src="./img/slider/slide-01.jpg"
-              srcset="./img/slider/slide-01@2x.jpg 2x"
-              alt="Slide"
-              class="slider__img"
-            />
-            <img
-              src="./img/slider/slide-02.jpg"
-              srcset="./img/slider/slide-02@2x.jpg 2x"
-              alt="Slide"
-              class="slider__img"
-            />
-            <img
-              src="./img/slider/slide-03.jpg"
-              srcset="./img/slider/slide-03@2x.jpg 2x"
-              alt="Slide"
-              class="slider__img"
-            />
+            <div>
+              <img
+                width="525"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-01.jpg"
+                data-srcset="./img/slider/slide-01@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-02.jpg"
+                data-srcset="./img/slider/slide-02@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="435"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-03.jpg"
+                data-srcset="./img/slider/slide-03@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-04.jpg"
+                data-srcset="./img/slider/slide-04@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-05.jpg"
+                data-srcset="./img/slider/slide-05@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-06.jpg"
+                data-srcset="./img/slider/slide-06@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="525"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-07.jpg"
+                data-srcset="./img/slider/slide-07@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="525"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-08.jpg"
+                data-srcset="./img/slider/slide-08@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
+            <div>
+              <img
+                width="525"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-09.jpg"
+                data-srcset="./img/slider/slide-09@2x.jpg 2x"
+                alt="Slide"
+                class="slider__img tns-lazy-img"
+              />
+            </div>
           </div>
         </div>
 
         <div class="container">
           <div class="locations__controls locations__controls--mobile">
-            <button>
+            <button class="prev">
               <img
                 class="locations__controls-img"
                 src="./img/icons/arrow-left.svg"
                 alt="Prev"
               />
             </button>
-            <button>
+            <button class="next">
               <img
                 class="locations__controls-img"
                 src="./img/icons/arrow-right.svg"
@@ -503,12 +578,14 @@
           <div class="map__desc">
             <p>Пресненская набережная, дом 12, 20 этаж.</p>
           </div>
-          <img
-            src="./img/map/map.jpg"
-            srcset="./img/map/map@2x.jpg 2x"
-            alt="Расположение"
-            class="map__img"
-          />
+
+          <iframe
+            class="map__iframe"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2f8526f00523fb60f476857c651fb78569f40300a1901e8588979b21eda130c&amp;source=constructor"
+            width="100%"
+            height="400"
+            frameborder="0"
+          ></iframe>
         </div>
       </section>
 
@@ -701,9 +778,11 @@
       <img src="./img/icons/arrow-up.svg" alt="Arrow up" />
     </a>
 
+    <script src="./js/tiny-slider/tiny-slider.js"></script>
     <script src="./js/scrollToTop.js"></script>
     <script src="./js/mobile-nav.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/accodion.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

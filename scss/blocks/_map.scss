@@ -24,7 +24,8 @@
   }
 }
 
-.map__img {
+.map__img,
+.map__iframe {
   border-radius: 40px;
 
   @include mobile {

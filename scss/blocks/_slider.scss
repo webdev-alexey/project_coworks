@@ -2,6 +2,14 @@
   overflow: hidden;
   display: flex;
   column-gap: 10px;
+
+  img {
+    max-width: unset;
+  }
+}
+
+.slider > div:first-child {
+  padding-left: 15px;
 }
 
 .slider__img {
