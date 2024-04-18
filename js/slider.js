@@ -5,14 +5,14 @@ const slider = tns({
   gutter: 10,
   mouseDrag: true,
   speed: 400,
-  loop: false,
+  // loop: false, // Ломает работу с lazyload
 
   autoWidth: true,
-  autoHeight: true,
+  lazyload: true,
+  swipeAngle: false,
 
   controlsContainer: ".locations__controls",
   nav: false,
-  lazyload: true,
 });
 
 const prevMobile = document.querySelector(".locations__controls--mobile .prev");

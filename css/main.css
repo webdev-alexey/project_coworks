@@ -488,66 +488,6 @@ a.btn-whatsapp:hover {
   flex-wrap: wrap;
 }
 
-.benefits__row {
-  display: flex;
-  column-gap: 30px;
-}
-
-.benefits__img {
-  flex: 1;
-}
-@media (max-width: 788px) {
-  .benefits__img {
-    display: none;
-  }
-}
-
-.benefits__desc {
-  flex: 1;
-}
-
-.benefits__img {
-  text-align: center;
-}
-
-.benefits__title {
-  margin-bottom: 10px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-@media (max-width: 1220px) {
-  .benefits__title {
-    font-size: 26px;
-  }
-}
-@media (max-width: 788px) {
-  .benefits__title {
-    font-size: 24px;
-  }
-}
-
-.benefits__text {
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #2f2f2f;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5em;
-}
-@media (max-width: 1220px) {
-  .benefits__text {
-    margin-bottom: 20px;
-  }
-}
-
-.benefits__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
-}
-
 .benefits {
   scroll-margin-top: 60px;
 }
@@ -622,6 +562,53 @@ a.btn-whatsapp:hover {
   row-gap: 30px;
 }
 
+.benefit {
+  display: flex;
+  column-gap: 30px;
+  align-items: flex-start;
+}
+@media (max-width: 1220px) {
+  .benefit {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 788px) {
+  .benefit {
+    column-gap: 15px;
+  }
+}
+
+.benefit__img {
+  flex-shrink: 0;
+}
+@media (max-width: 1220px) {
+  .benefit__img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.benefit__desc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: #2f2f2f;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.benefit__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+@media (max-width: 1220px) {
+  .benefit__title {
+    font-size: 18px;
+  }
+}
+
 .locations {
   scroll-margin-top: 60px;
 }
@@ -684,26 +671,21 @@ a.btn-whatsapp:hover {
   }
 }
 
-.slider {
-  overflow: hidden;
-  display: flex;
-  column-gap: 10px;
-}
 .slider img {
-  max-width: unset;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: unset !important;
+  height: unset !important;
+  height: 400px !important;
+}
+@media (max-width: 788px) {
+  .slider img {
+    height: 250px !important;
+  }
 }
 
 .slider > div:first-child {
   padding-left: 15px;
-}
-
-.slider__img {
-  border-radius: 8px;
-}
-@media (max-width: 788px) {
-  .slider__img {
-    height: 250px;
-  }
 }
 
 .services {
